@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.image-container {
+  height: 100px;
+  width: 100px;
+  transform-style: preserve-3d;
+}
+.trigger {
+  padding: 20px;
+  border: black solid 1px;
+}
+.topshelf,
+.piller {
+  transition: all 0.15s cubic-bezier(0, 1.01, 0, 1.45);
 }
