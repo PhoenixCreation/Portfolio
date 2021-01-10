@@ -7,7 +7,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Phoenix Creation</h1>
+    <div class="navbar">
+      <div class="navbar--left">
+        <div class="navbar--heading">Phoenix Creation</div>
+      </div>
+      <div class="navbar--right">
+        <div class="navbar--options">
+          <img
+            src="/Images/Logos/GitHub.png"
+            alt="Github Logo"
+            class="navbar--option"
+          />
+        </div>
+        <div class="navbar--options">
+          <img
+            src="/Images/Logos/Facebook.png"
+            alt="Facebook logo"
+            class="navbar--option"
+          />
+        </div>
+        <div class="navbar--options">
+          <img src="/Images/Logos/Menu.png" alt="Menu" class="navbar--option" />
+        </div>
+      </div>
+    </div>
+    <div class="pager">
+      <div class="pager--container">
+        <a href="#home"
+          ><div
+            class="pager--indicator pager--indicator--active GOTO--HOME"
+          ></div
+        ></a>
+        <a href="#about"><div class="pager--indicator GOTO--ABOUT"></div></a>
+        <a href="#projects"
+          ><div class="pager--indicator GOTO--PROJECTS"></div
+        ></a>
+        <a href="#contact"
+          ><div class="pager--indicator GOTO--CONTACT"></div
+        ></a>
+      </div>
+    </div>
+    <div class="container" id="fullpage">
+      <div class="section home" id="home">
+        <h1>Hello Home</h1>
+      </div>
+      <div class="section about" id="about">
+        <h1>Hello About</h1>
+      </div>
+      <div class="section projects" id="projects">
+        <h1>Hello Projects</h1>
+      </div>
+      <div class="section contact" id="contact">
+        <h1>Hello Contact</h1>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
