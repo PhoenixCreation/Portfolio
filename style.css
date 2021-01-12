@@ -6,6 +6,7 @@ body {
   background-color: #15171d;
   color: aliceblue;
   scroll-behavior: smooth;
+  cursor: url("Images/cursor.png"), auto !important;
 }
 .navbar {
   position: fixed;

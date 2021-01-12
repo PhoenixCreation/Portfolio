@@ -1,0 +1,76 @@
+.contact--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact--upper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contact--heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.contact--heading--text {
+  font-size: 36px;
+  color: aliceblue;
+}
+.contact--twitter--container,
+.contact--instagram--container,
+.contact--email--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.contact--twitter--text,
+.contact--instagram--text,
+.contact--email--text {
+  font-size: 24px;
+  color: aliceblue;
+}
+.contact--twitter--logo,
+.contact--instagram--logo,
+.contact--email--logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+}
+.contact--lower {
+  height: 250px;
+  background: #e06d79;
+  margin-left: 50px;
+  border-top-left-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact--lower--left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  color: black;
+  align-items: left;
+  justify-content: center;
+  padding-left: 100px;
+}
+.contact--lower--right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo--footer {
+  width: 30px;
+  height: 30px;
+}
