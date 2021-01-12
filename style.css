@@ -47,7 +47,6 @@ body {
   left: 0;
   height: 90vh;
   width: 15vw;
-  /* border: red 1px solid; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,23 +56,27 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  width: 75px;
 }
 .pager--indicator {
+  display: block;
   background-color: aliceblue;
   width: 40px;
   height: 4px;
   margin-bottom: 15px;
   margin-top: 15px;
-  transition: all 0.5s ease-out;
+  /* 700 milliseconds because it is page transition time from fullpage.js */
+  transition: all 0.7s ease-out;
 }
-.pager--indicator--active {
+.active .pager--indicator {
   width: 75px;
 }
+
 .container {
-  margin-top: 10vh;
   margin-left: 15vw;
 }
 .section {
   /* border: red 2px solid; */
+  padding-top: 10vh;
   height: 100vh;
 }

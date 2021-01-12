@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phoenix Creation</title>
+
+    <!-- Scroll Plugins -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main css -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/home_style.css" />
+    <link rel="stylesheet" href="css/about_style.css" />
+    <link rel="stylesheet" href="css/projects_style.css" />
   </head>
   <body>
     <div class="navbar">
@@ -32,33 +49,155 @@
       </div>
     </div>
     <div class="pager">
-      <div class="pager--container">
-        <a href="#home"
-          ><div
-            class="pager--indicator pager--indicator--active GOTO--HOME"
-          ></div
-        ></a>
-        <a href="#about"><div class="pager--indicator GOTO--ABOUT"></div></a>
-        <a href="#projects"
-          ><div class="pager--indicator GOTO--PROJECTS"></div
-        ></a>
-        <a href="#contact"
-          ><div class="pager--indicator GOTO--CONTACT"></div
-        ></a>
+      <div class="pager--container" id="myMenu">
+        <div data-menuanchor="home" class="active">
+          <a href="#home" class="pager--indicator"></a>
+        </div>
+        <div data-menuanchor="about">
+          <a href="#about" class="pager--indicator"></a>
+        </div>
+        <div data-menuanchor="projects">
+          <a href="#projects" class="pager--indicator"></a>
+        </div>
+        <div data-menuanchor="contact">
+          <a href="#contact" class="pager--indicator"></a>
+        </div>
       </div>
     </div>
     <div class="container" id="fullpage">
-      <div class="section home" id="home">
-        <h1>Hello Home</h1>
+      <div class="section home">
+        <div class="home--container">
+          <div class="home--left">
+            <div class="home--heading">
+              <h1 class="home--heading--text">Phoenix</h1>
+              <h1 class="home--heading--text">Creation</h1>
+            </div>
+            <div class="home--devider">
+              <div class="home--devider--upper"></div>
+              <div class="home--devider--lower"></div>
+            </div>
+            <div class="home--works">
+              <div class="home--works--backend">Back-end Developer /</div>
+              <div class="home--works--react">React Developer /</div>
+              <div class="home--works--reactnative">React-Native developer</div>
+            </div>
+            <!-- This conatact button is going to be changed a lot -->
+            <div class="home--contact--btn">
+              <div class="contact--btn--container">
+                <div class="contact--btn--text">Let's Talk</div>
+              </div>
+            </div>
+          </div>
+          <!-- TODO: Add the diffrent technology design... 
+            How? Svg or Direct transparent image? Let's see where I ends up -->
+          <div class="home--right">
+            <div class="home--image--container">
+              <img
+                src="/Images/logomain.png"
+                alt="Phoenix Creation logo with picture of phoennix im middle"
+                class="home--image"
+              />
+            </div>
+            <div class="home--logodesign--container"></div>
+          </div>
+        </div>
       </div>
-      <div class="section about" id="about">
-        <h1>Hello About</h1>
+      <div class="section about">
+        <div class="about--container">
+          <div class="about--heading">
+            <h2 class="about--heading--text">I can work with...</h2>
+          </div>
+          <div class="about--cards--container">
+            <div class="about--card">
+              <div class="about--card--logo--conatiner">
+                <div class="about--card--logo">
+                  <div class="uilogo--cont">
+                    <div class="uilogo--heading"></div>
+                    <div class="uilogo--center"></div>
+                    <div class="uilogo--bottom">
+                      <div class="uilogo--bottom--left">
+                        <div class="uilogo--bottom--left--1"></div>
+                        <div class="uilogo--bottom--left--2"></div>
+                        <div class="uilogo--bottom--left--3"></div>
+                      </div>
+                      <div class="uilogo--bottom--right"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about--card--heading--container">
+                <div class="about--card--heading">UI /</div>
+                <div class="about--card--heading">UX</div>
+              </div>
+              <div class="about--card--desc--container">
+                <div class="about--card--desc">
+                  Landing Pages, User Flow, Wireframing, Prototyping, Mobile App
+                  Design
+                </div>
+              </div>
+            </div>
+            <div class="about--card">
+              <div class="about--card--logo--conatiner">
+                <div class="about--card--logo">
+                  <div class="frontlogo--container">
+                    <div class="frontlogo--ellipse"></div>
+                    <div class="frontlogo--ellipse"></div>
+                    <div class="frontlogo--ellipse"></div>
+                    <div class="frontlogo--center"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="about--card--heading--container">
+                <div class="about--card--heading">Front-End</div>
+                <div class="about--card--heading">Web Development</div>
+              </div>
+              <div class="about--card--desc--container">
+                <div class="about--card--desc">
+                  Plain HTML + CSS, React, React-Native, Mobile Friendly and
+                  responsive web design
+                </div>
+              </div>
+            </div>
+            <div class="about--card">
+              <div class="about--card--logo--conatiner">
+                <div class="about--card--logo">
+                  <div class="backlogo--container">
+                    <div class="backlogo--text">&lt/&gt</div>
+                  </div>
+                </div>
+              </div>
+              <div class="about--card--heading--container">
+                <div class="about--card--heading">Back-End</div>
+                <div class="about--card--heading">Web Development</div>
+              </div>
+              <div class="about--card--desc--container">
+                <div class="about--card--desc">
+                  Node.js + express, Django, REST API, Database Connectivity
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section projects" id="projects">
-        <h1>Hello Projects</h1>
+      <div class="section projects">
+        <div class="projects--container">
+          <div class="projects--heading">Projects</div>
+          <div class="work--container">
+            <div class="work--first"></div>
+            <div class="work--second">
+              <div class="work--second--top"></div>
+              <div class="work--second--bottom"></div>
+            </div>
+            <div class="work--third">
+              <div class="work--third--top"></div>
+              <div class="work--third--bottom">Check out some more ...</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section contact" id="contact">
+      <div class="section contact">
         <h1>Hello Contact</h1>
+        <!-- COME BACK HERE -->
       </div>
     </div>
     <script src="script.js"></script>

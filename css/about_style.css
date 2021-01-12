@@ -1,0 +1,163 @@
+.about--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+.about--heading {
+  margin-top: 50px;
+}
+.about--heading--text {
+  color: aliceblue;
+  font-size: 36px;
+}
+.about--cards--container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.about--card {
+  width: 200px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+.about--card--logo--conatiner {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1000px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about--card--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about--card--heading--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about--card--heading {
+  font-size: 22px;
+  color: #ed5565;
+  font-weight: bold;
+  text-align: center;
+}
+.about--card--desc--container {
+  width: 100%;
+}
+.about--card--desc {
+  font-size: 18px;
+  color: #e5e5e5bb;
+  text-align: center;
+}
+/* UI /UX logo */
+.uilogo--cont {
+  width: 32px;
+  height: 42px;
+  border: 2px solid #ed5565;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+}
+.uilogo--heading {
+  width: 8px;
+  height: 0px;
+  border: 2px solid #ed5565;
+  margin-bottom: 3px;
+}
+.uilogo--center {
+  width: 19px;
+  height: 7px;
+  background: #ed5565;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+.uilogo--bottom {
+  display: flex;
+  flex-direction: row;
+}
+.uilogo--bottom--left {
+  display: flex;
+  flex-direction: column;
+}
+.uilogo--bottom--left--1,
+.uilogo--bottom--left--2,
+.uilogo--bottom--left--3 {
+  width: 10px;
+  height: 0px;
+  border: 0.8px solid #ed5565;
+  margin-bottom: 2px;
+}
+.uilogo--bottom--left--3 {
+  width: 6px;
+}
+.uilogo--bottom--right {
+  width: 6px;
+  height: 6px;
+  background: #ed5565;
+  border-radius: 1px;
+  margin-left: 2px;
+}
+/* Front end logo */
+.frontlogo--container {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frontlogo--ellipse {
+  width: 16px;
+  height: 38px;
+  border: 2px solid #ed5565;
+  position: absolute;
+  border-radius: 50%;
+}
+.frontlogo--ellipse:nth-child(1) {
+  transform: rotate(90deg);
+}
+.frontlogo--ellipse:nth-child(2) {
+  transform: rotate(30deg);
+}
+.frontlogo--ellipse:nth-child(3) {
+  transform: rotate(-30deg);
+}
+.frontlogo--center {
+  width: 6px;
+  height: 6px;
+  background-color: #ed5565;
+  border-radius: 10px;
+}
+/* Back end logo */
+.backlogo--container {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backlogo--text {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  color: #ed5565;
+}
+/* Back end logo ended */

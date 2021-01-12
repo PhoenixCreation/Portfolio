@@ -1,0 +1,67 @@
+.projects--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+.projects--heading {
+  margin-top: 50px;
+  font-size: 36px;
+  color: aliceblue;
+}
+.work--container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -40px;
+  left: -60px;
+}
+.work--first {
+  width: 180px;
+  height: 250px;
+  border: 10px solid #ed5565aa;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.work--second {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+.work--second--top {
+  width: 180px;
+  height: 140px;
+  border: 10px solid #ed5565aa;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.work--second--bottom {
+  width: 180px;
+  height: 250px;
+  border: 10px solid #ed5565aa;
+  border-radius: 5px;
+}
+.work--third {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+.work--third--top {
+  width: 300px;
+  height: 220px;
+  border: 10px solid #ed5565aa;
+  border-radius: 5px;
+}
+.work--third--bottom {
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0.8;
+}
