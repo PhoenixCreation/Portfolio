@@ -1,5 +1,6 @@
 // DOM elements
 let contactBtn = document.getElementById("contact--btn");
+let meteor = document.getElementById("mouse--orbitor");
 
 // fullpage js
 var myFullpage = new fullpage("#fullpage", {
@@ -40,7 +41,11 @@ var myFullpage = new fullpage("#fullpage", {
     }
   },
 });
-
-// contactBtn.addEventListener("click", () => {
-//   alert("conatcting me? naaahh");
-// });
+var angle = -Math.PI / 2;
+document.addEventListener("mousemove", (event) => {
+  let x = event.clientX + 25 * Math.sin(angle);
+  let y = event.clientY + 25 * Math.cos(angle);
+  angle += Math.PI / 100;
+  meteor.style.left = x + "px";
+  meteor.style.top = y + "px";
+});

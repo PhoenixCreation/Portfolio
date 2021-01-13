@@ -41,7 +41,7 @@
   height: 4px;
   background-color: #ed5565;
   margin-bottom: 25px;
-  animation: UpperDivider 1s cubic-bezier(0.03, -1.4, 0.63, 3.33);
+  animation: UpperDivider 1s linear;
 }
 @keyframes UpperDivider {
   0% {
@@ -57,7 +57,7 @@
   background-color: #ed5565;
   align-self: center;
   margin-left: 60px;
-  animation: LowerDivider 1s cubic-bezier(0.03, -1.4, 0.63, 3.33);
+  animation: LowerDivider 1s linear;
 }
 @keyframes LowerDivider {
   0% {
@@ -162,7 +162,6 @@
   position: relative;
   flex: 1;
   align-items: center;
-  animation: HomeHeading 1s linear;
 }
 .home--image--container {
   width: 400px;
@@ -173,6 +172,15 @@
 .home--image {
   width: 100%;
   height: 100%;
+  animation: ImageAnimation 2.7s linear;
+}
+@keyframes ImageAnimation {
+  0% {
+    scale: 0.6;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .home--logodesign--container {
   position: absolute;
@@ -572,4 +580,74 @@
   width: 50px;
   height: 50px;
   object-fit: contain;
+}
+
+/* animations */
+[class$="--small--circle"] {
+  animation: SmallCircle 0.7s linear;
+}
+@keyframes SmallCircle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+[class$="--inner--line"] {
+  animation: InnerLine 1.1s linear;
+}
+@keyframes InnerLine {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+[class$="--middle--line"] {
+  animation: MiddleLine 1.6s linear;
+}
+@keyframes MiddleLine {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+[class$="--outer--line"] {
+  animation: OuterLine 2.1s linear;
+}
+@keyframes OuterLine {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+[class$="--big--circle"] {
+  overflow: hidden;
+  animation: OuterLine 2.7s linear;
+}
+@keyframes OuterLine {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
