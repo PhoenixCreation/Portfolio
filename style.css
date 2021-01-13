@@ -8,6 +8,10 @@ body {
   scroll-behavior: smooth;
   cursor: url("Images/cursor.png"), auto !important;
 }
+a {
+  all: initial;
+  color: aliceblue;
+}
 .navbar {
   position: fixed;
   top: 0;
