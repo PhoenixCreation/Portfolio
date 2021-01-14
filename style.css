@@ -64,6 +64,7 @@ a {
   width: 75px;
 }
 .pager--indicator {
+  cursor: pointer;
   display: block;
   background-color: aliceblue;
   width: 40px;

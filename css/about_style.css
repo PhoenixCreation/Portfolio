@@ -9,10 +9,26 @@
 }
 .about--heading {
   margin-top: 50px;
+  overflow: hidden;
 }
 .about--heading--text {
   color: aliceblue;
   font-size: 36px;
+  opacity: 0;
+}
+.active .about--heading--text {
+  animation: aboutheading 1s ease-out 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes aboutheading {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 .about--cards--container {
   flex: 1;
@@ -28,6 +44,49 @@
   flex-direction: column;
   align-items: center;
   margin-right: 40px;
+  opacity: 0;
+}
+.active .about--card:nth-child(1) {
+  animation: card1 1s ease-out 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes card1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.active .about--card:nth-child(3) {
+  animation: card3 1s ease-out 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes card3 {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.active .about--card:nth-child(2) {
+  animation: card2 1s ease-out 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes card2 {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .about--card--logo--conatiner {
   width: 70px;
