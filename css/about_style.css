@@ -196,6 +196,7 @@
   color: #ed5565;
   max-lines: 1;
   white-space: nowrap;
+  transition: all 0.5s ease-out;
 }
 .backlogo--hover--text {
   display: none;
