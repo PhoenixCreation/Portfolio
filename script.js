@@ -41,14 +41,15 @@ var myFullpage = new fullpage("#fullpage", {
     }
   },
 });
-var angle = -Math.PI / 2;
-document.addEventListener("mousemove", (event) => {
-  let x = event.clientX + 25 * Math.sin(angle);
-  let y = event.clientY + 25 * Math.cos(angle);
-  angle += Math.PI / 100;
-  meteor.style.left = x + "px";
-  meteor.style.top = y + "px";
-});
+
+// I am not liking the meteor system... but if wanted just uncomment this
+
+// document.addEventListener("mousemove", (event) => {
+//   let x = event.clientX - 15;
+//   let y = event.clientY - 15;
+//   meteor.style.left = x + "px";
+//   meteor.style.top = y + "px";
+// });
 
 // Mobile check if required later....
 // let mobile = false

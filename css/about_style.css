@@ -76,10 +76,27 @@
   padding-left: 5px;
 }
 .uilogo--heading {
+  position: relative;
   width: 8px;
   height: 0px;
   border: 2px solid #ed5565;
   margin-bottom: 3px;
+  align-self: left;
+  margin-left: 0px;
+}
+.uilogo--cont:hover .uilogo--heading {
+  align-self: center;
+  margin-left: 3px;
+}
+.uilogo--cont:hover .uilogo--heading::before {
+  content: "";
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  border: 2px solid #ed5565;
+  border-radius: 50px;
+  left: -9px;
+  top: -3px;
 }
 .uilogo--center {
   width: 19px;
@@ -87,6 +104,9 @@
   background: #ed5565;
   border-radius: 3px;
   margin-bottom: 3px;
+}
+.uilogo--cont:hover .uilogo--center {
+  height: 2px;
 }
 .uilogo--bottom {
   display: flex;
@@ -105,7 +125,11 @@
   margin-bottom: 2px;
 }
 .uilogo--bottom--left--3 {
+  margin-bottom: 0;
   width: 6px;
+}
+.uilogo--cont:hover .uilogo--bottom--left--3 {
+  width: 10px;
 }
 .uilogo--bottom--right {
   width: 6px;
@@ -113,6 +137,12 @@
   background: #ed5565;
   border-radius: 1px;
   margin-left: 2px;
+}
+.uilogo--cont:hover .uilogo--bottom--right {
+  height: 100%;
+}
+[class^="uilogo--"] {
+  transition: all 0.5s ease-out;
 }
 /* Front end logo */
 .frontlogo--container {
@@ -122,6 +152,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 3s ease-in-out;
+}
+.frontlogo--container:hover {
+  transform: rotate(360deg);
 }
 .frontlogo--ellipse {
   width: 16px;
@@ -152,12 +186,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 .backlogo--text {
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight: bolder;
   color: #ed5565;
+  max-lines: 1;
+  white-space: nowrap;
+}
+.backlogo--hover--text {
+  display: none;
+  font-weight: normal;
+  overflow: hidden;
+}
+.backlogo--container:hover .backlogo--text {
+  font-size: 12px;
+}
+.backlogo--container:hover .backlogo--hover--text {
+  display: block;
+  animation: BACKENDTEXT 2s steps(7);
+}
+@keyframes BACKENDTEXT {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 8ch;
+  }
 }
 /* Back end logo ended */
