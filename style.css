@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
 }
+a {
+  all: initial;
+  cursor: pointer;
+  color: aliceblue;
+}
 body {
   background-color: #15171d;
   color: aliceblue;
   scroll-behavior: smooth;
-  cursor: url("Images/cursor.png"), auto !important;
-}
-a {
-  all: initial;
-  color: aliceblue;
+  cursor: url("Images/cursor.png"), auto;
 }
 .navbar {
   position: fixed;
@@ -26,6 +27,7 @@ a {
   margin-right: 5vw;
   padding-left: 10px;
   padding-right: 10px;
+  z-index: 1100;
 }
 .navbar--left {
   flex: 1;
@@ -41,10 +43,20 @@ a {
   width: 35px;
   height: 35px;
   margin-left: 85px;
+  position: relative;
 }
 .navbar--option {
   width: 100%;
   height: 100%;
+}
+.navbar--github--hover--image {
+  display: none;
+  border-radius: 20px;
+}
+.navbar--options--github:hover .navbar--github--hover--image {
+  display: block;
+  position: absolute;
+  left: -20px;
 }
 .pager {
   position: fixed;
