@@ -139,7 +139,6 @@
 }
 .contact--contact {
   bottom: calc(75px - 300vh);
-  right: 350px;
   z-index: -1;
   opacity: 0;
 }
