@@ -7,10 +7,26 @@
   padding-right: 20px;
   justify-content: space-between;
 }
-.projects--heading {
+.projects--heading--container {
   margin-top: 50px;
   font-size: 36px;
   color: aliceblue;
+  overflow: hidden;
+}
+.projects--heading {
+  opacity: 0;
+}
+.active .projects--heading {
+  animation: projecthead 1s ease 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes projecthead {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .work--container {
   flex: 1;
@@ -21,6 +37,19 @@
   position: relative;
   top: -40px;
   left: -60px;
+  opacity: 0;
+}
+.active .work--container {
+  animation: workcont 1s ease-in 0.9s;
+  animation-fill-mode: forwards;
+}
+@keyframes workcont {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .work--first {
   width: 180px;
@@ -28,6 +57,7 @@
   border: 10px solid #ed5565aa;
   margin-right: 5px;
   border-radius: 5px;
+  background-color: #fff9;
 }
 .work--second {
   display: flex;
@@ -40,12 +70,14 @@
   border: 10px solid #ed5565aa;
   margin-bottom: 5px;
   border-radius: 5px;
+  background-color: #fff9;
 }
 .work--second--bottom {
   width: 180px;
   height: 250px;
   border: 10px solid #ed5565aa;
   border-radius: 5px;
+  background-color: #fff9;
 }
 .work--third {
   display: flex;
@@ -57,6 +89,7 @@
   height: 220px;
   border: 10px solid #ed5565aa;
   border-radius: 5px;
+  background-color: #fff9;
 }
 .work--third--bottom {
   font-size: 20px;
