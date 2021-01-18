@@ -88,7 +88,7 @@ fetch(
       embeds: [
         {
           title: "Netlify",
-          url: "https://phoennixcreation.netlify.app",
+          url: "https://phoenixcreation.netlify.app",
           description:
             "This is notification about someone visiting your netlify portfolio.",
           color: Math.floor(Math.random() * 16777215),
