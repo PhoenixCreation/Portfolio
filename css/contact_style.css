@@ -25,12 +25,12 @@
   opacity: 0;
 }
 .active .contact--heading--text {
-  animation: contactheading 1s ease-in 0.6s;
+  animation: contactheading 1s ease-in 0.3s;
   animation-fill-mode: forwards;
 }
 .active .contact--heading--text:nth-child(2) {
   border-bottom: #e06d79 2px solid;
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
 }
 @keyframes contactheading {
   0% {
@@ -50,15 +50,15 @@
   opacity: 0;
 }
 .active .contact--twitter--container {
-  animation: contactLink 0.7s ease-in 0.9s;
+  animation: contactLink 0.7s ease-in 0.6s;
   animation-fill-mode: forwards;
 }
 .active .contact--instagram--container {
-  animation: contactLink 0.7s ease-in 1.1s;
+  animation: contactLink 0.7s ease-in 0.8s;
   animation-fill-mode: forwards;
 }
 .active .contact--email--container {
-  animation: contactLink 0.7s ease-in 1.3s;
+  animation: contactLink 0.7s ease-in 1s;
   animation-fill-mode: forwards;
 }
 @keyframes contactLink {
@@ -96,7 +96,7 @@
   transform: translateY(250px);
 }
 .active .contact--lower {
-  animation: lowercont 0.7s ease-in 1s;
+  animation: lowercont 1s ease-in 0.7s;
   animation-fill-mode: forwards;
 }
 @keyframes lowercont {

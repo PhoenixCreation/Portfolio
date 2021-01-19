@@ -17,7 +17,7 @@
   opacity: 0;
 }
 .active .projects--heading {
-  animation: projecthead 1s ease 0.6s;
+  animation: projecthead 1s ease 0.2s;
   animation-fill-mode: forwards;
 }
 @keyframes projecthead {
@@ -40,7 +40,7 @@
   opacity: 0;
 }
 .active .work--container {
-  animation: workcont 1s ease-in 0.9s;
+  animation: workcont 1s ease-in 0.5s;
   animation-fill-mode: forwards;
 }
 @keyframes workcont {

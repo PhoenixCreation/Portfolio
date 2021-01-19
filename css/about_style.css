@@ -17,7 +17,7 @@
   opacity: 0;
 }
 .active .about--heading--text {
-  animation: aboutheading 1s ease-out 0.2s;
+  animation: aboutheading 0.8s ease-out;
   animation-fill-mode: forwards;
 }
 @keyframes aboutheading {
@@ -47,7 +47,7 @@
   opacity: 0;
 }
 .active .about--card:nth-child(1) {
-  animation: card1 1s ease-out 0.7s;
+  animation: card1 1s ease-out 0.3s;
   animation-fill-mode: forwards;
 }
 @keyframes card1 {
@@ -61,7 +61,7 @@
   }
 }
 .active .about--card:nth-child(3) {
-  animation: card3 1s ease-out 0.7s;
+  animation: card3 1s ease-out 0.3s;
   animation-fill-mode: forwards;
 }
 @keyframes card3 {
@@ -75,7 +75,7 @@
   }
 }
 .active .about--card:nth-child(2) {
-  animation: card2 1s ease-out 0.7s;
+  animation: card2 1s ease-out 0.3s;
   animation-fill-mode: forwards;
 }
 @keyframes card2 {
