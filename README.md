@@ -31,4 +31,4 @@ It will be better if you dont't look at them. But if you still want to then give
 
 #
 
-## If you liked this one then give it a star. 🌠
+## If you liked this one then give it a star. 🌟
