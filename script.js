@@ -71,51 +71,53 @@ var myFullpage = new fullpage("#fullpage", {
 //   mobile = true
 // }
 
-let user_info = "";
-user_info += "`Browser CodeName: " + navigator.appCodeName + "` \n";
-user_info += "`Browser Name: " + navigator.appName + "` \n";
-user_info += "`Browser Version: " + navigator.appVersion + "` \n";
-user_info += "`Cookies Enabled: " + navigator.cookieEnabled + "` \n";
-user_info += "`Browser Language: " + navigator.language + "` \n";
-user_info += "`Browser Online: " + navigator.onLine + "` \n";
-user_info += "`Platform: " + navigator.platform + "` \n";
-user_info += "`User-agent header: " + navigator.userAgent + "` \n";
+if (!location.hostname === "localhost" && !location.hostname === "127.0.0.1") {
+  let user_info = "";
+  user_info += "`Browser CodeName: " + navigator.appCodeName + "` \n";
+  user_info += "`Browser Name: " + navigator.appName + "` \n";
+  user_info += "`Browser Version: " + navigator.appVersion + "` \n";
+  user_info += "`Cookies Enabled: " + navigator.cookieEnabled + "` \n";
+  user_info += "`Browser Language: " + navigator.language + "` \n";
+  user_info += "`Browser Online: " + navigator.onLine + "` \n";
+  user_info += "`Platform: " + navigator.platform + "` \n";
+  user_info += "`User-agent header: " + navigator.userAgent + "` \n";
 
-fetch(
-  "https://discord.com/api/webhooks/800229959875821630/sq6qQNbWZbg8-x4u-qVIQBT3ql9lqmCYqph0Eu_d7e341MJJtJ06NeeGsQlTKTYZsMw2",
-  {
-    // Adding method type
-    method: "POST",
+  fetch(
+    "https://discord.com/api/webhooks/800229959875821630/sq6qQNbWZbg8-x4u-qVIQBT3ql9lqmCYqph0Eu_d7e341MJJtJ06NeeGsQlTKTYZsMw2",
+    {
+      // Adding method type
+      method: "POST",
 
-    // Adding body or contents to send
-    body: JSON.stringify({
-      username: "Netlify Portfolio",
-      content: "---------------------------------",
-      embeds: [
-        {
-          title: "Netlify",
-          url: "https://phoenixcreation.netlify.app",
-          description:
-            "This is notification about someone visiting your netlify portfolio.",
-          color: Math.floor(Math.random() * 16777215),
-          fields: [
-            {
-              name: "Full headers",
-              value: user_info,
-            },
-            {
-              name: "Actions to take",
-              value:
-                "Just chill man. This is just so that you get to know some one is visiting you.",
-            },
-          ],
-        },
-      ],
-    }),
+      // Adding body or contents to send
+      body: JSON.stringify({
+        username: "Netlify Portfolio",
+        content: "---------------------------------",
+        embeds: [
+          {
+            title: "Netlify",
+            url: "https://phoenixcreation.netlify.app",
+            description:
+              "This is notification about someone visiting your netlify portfolio.",
+            color: Math.floor(Math.random() * 16777215),
+            fields: [
+              {
+                name: "Full headers",
+                value: user_info,
+              },
+              {
+                name: "Actions to take",
+                value:
+                  "Just chill man. This is just so that you get to know some one is visiting you.",
+              },
+            ],
+          },
+        ],
+      }),
 
-    // Adding headers to the request
-    headers: {
-      "Content-type": "application/json; charset=UTF-8",
-    },
-  }
-);
+      // Adding headers to the request
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    }
+  );
+}
