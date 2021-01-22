@@ -86,6 +86,64 @@ body {
   /* 700 milliseconds because it is page transition time from fullpage.js */
   transition: all 0.7s ease-out;
 }
+.scrolldown--cont {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transform: translate(100%, 100%);
+  transition: all 1s linear;
+}
+.active.scrolldown--cont {
+  animation: scrolldown 1s cubic-bezier(0.25, 0.1, 0, 1.95) 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes scrolldown {
+  0% {
+    transform: rotate(90deg) translateX(100%);
+  }
+  100% {
+    transform: rotate(90deg) translateX(-50%);
+  }
+}
+.scrolldown--upper {
+  width: 20px;
+  border: 2px solid #ed5565;
+}
+.scrolldown--middle {
+  font-size: 1.3rem;
+  margin: 10px;
+  transform: translateY(-3px);
+}
+.scrolldown--lower {
+  width: 40px;
+  position: relative;
+  border: 2px solid #ed5565;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.scrolldown--lower::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  border: 2px solid #ed5565;
+  right: -16px;
+  top: -6px;
+  z-index: 10000;
+  transform: rotate(45deg);
+}
+.scrolldown--lower::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  border: 2px solid #ed5565;
+  right: -16px;
+  bottom: -6px;
+  z-index: 10000;
+  transform: rotate(-45deg);
+}
 .active .pager--indicator {
   width: 75px;
 }
