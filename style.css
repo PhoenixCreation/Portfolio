@@ -94,10 +94,9 @@ body {
   align-items: center;
   justify-content: center;
   transform: translate(100%, 100%);
-  transition: all 1s linear;
 }
 .active.scrolldown--cont {
-  animation: scrolldown 1s cubic-bezier(0.25, 0.1, 0, 1.95) 1s;
+  animation: scrolldown 1s cubic-bezier(0.25, 0.1, 0, 1.95) 2s;
   animation-fill-mode: forwards;
 }
 @keyframes scrolldown {

@@ -58,6 +58,10 @@
   margin-right: 5px;
   border-radius: 5px;
   background-color: #fff9;
+  transition: all 0.4s linear;
+}
+.work--first:hover {
+  scale: 1.75;
 }
 .work--second {
   display: flex;
@@ -71,6 +75,10 @@
   margin-bottom: 5px;
   border-radius: 5px;
   background-color: #fff9;
+  transition: all 0.4s linear;
+}
+.work--second--top:hover {
+  scale: 1.75;
 }
 .work--second--bottom {
   width: 180px;
@@ -78,6 +86,11 @@
   border: 10px solid #ed5565aa;
   border-radius: 5px;
   background-color: #fff9;
+  transition: all 0.4s linear;
+}
+.work--second--bottom:hover {
+  scale: 1.5;
+  transform: translateY(-40px);
 }
 .work--third {
   display: flex;
@@ -90,6 +103,11 @@
   border: 10px solid #ed5565aa;
   border-radius: 5px;
   background-color: #fff9;
+  transition: all 0.4s linear;
+}
+.work--third--top:hover {
+  scale: 1.75;
+  transform: translateX(-70px);
 }
 .work--third--bottom {
   font-size: 20px;
