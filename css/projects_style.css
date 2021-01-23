@@ -40,15 +40,20 @@
   opacity: 0;
 }
 .active .work--container {
-  animation: workcont 1s ease-in 0.5s;
+  animation: workcont 2s ease-in 0.5s;
   animation-fill-mode: forwards;
 }
 @keyframes workcont {
   0% {
     opacity: 0;
+    pointer-events: none;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
+    pointer-events: unset;
   }
 }
 .work--first {
@@ -62,6 +67,7 @@
 }
 .work--first:hover {
   scale: 1.75;
+  transform: translateX(45px);
 }
 .work--second {
   display: flex;
@@ -78,7 +84,12 @@
   transition: all 0.4s linear;
 }
 .work--second--top:hover {
-  scale: 1.75;
+  scale: 2.5;
+  transform: translateY(40px);
+}
+.work--second--top--img {
+  width: 100%;
+  height: 100%;
 }
 .work--second--bottom {
   width: 180px;
@@ -89,8 +100,12 @@
   transition: all 0.4s linear;
 }
 .work--second--bottom:hover {
-  scale: 1.5;
-  transform: translateY(-40px);
+  scale: 2;
+  transform: translateY(-60px);
+}
+.work--second--bottom--img {
+  width: 100%;
+  height: 100%;
 }
 .work--third {
   display: flex;
@@ -106,8 +121,12 @@
   transition: all 0.4s linear;
 }
 .work--third--top:hover {
-  scale: 1.75;
+  scale: 2;
   transform: translateX(-70px);
+}
+.work--third--top--img {
+  width: 100%;
+  height: 100%;
 }
 .work--third--bottom {
   font-size: 20px;
@@ -115,4 +134,6 @@
   text-align: center;
   margin-top: 10px;
   opacity: 0.8;
+  z-index: -1;
+  cursor: pointer;
 }

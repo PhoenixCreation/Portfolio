@@ -71,7 +71,8 @@ var myFullpage = new fullpage("#fullpage", {
 //   mobile = true
 // }
 
-if (!location.hostname === "localhost" && !location.hostname === "127.0.0.1") {
+if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {}
+else{
   let user_info = "";
   user_info += "`Browser CodeName: " + navigator.appCodeName + "` \n";
   user_info += "`Browser Name: " + navigator.appName + "` \n";
