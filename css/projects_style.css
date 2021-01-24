@@ -141,3 +141,28 @@
   z-index: -1;
   cursor: pointer;
 }
+
+/* On hover expact user to click animations. */
+.work--second--top:hover {
+  animation: pleaseClick 0.5s infinite linear;
+}
+.work--first:hover {
+  animation: pleaseClick 0.5s infinite linear;
+}
+.work--second--bottom:hover {
+  animation: pleaseClick 0.5s infinite linear;
+}
+.work--third--top {
+  animation: pleaseClick 0.5s infinite linear;
+}
+@keyframes pleaseClick {
+  0% {
+    cursor: inherit;
+  }
+  50% {
+    cursor: pointer;
+  }
+  100% {
+    cursor: inherit;
+  }
+}
