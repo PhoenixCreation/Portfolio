@@ -2,6 +2,7 @@
 let contactBtn = document.getElementById("contact--btn");
 let meteor = document.getElementById("mouse--orbitor");
 let scrolldown = document.getElementById("scrolldown--cont");
+let scrollCont = document.getElementById("myMenu");
 
 // // fullpage js
 var myFullpage = new fullpage("#fullpage", {
@@ -23,6 +24,7 @@ var myFullpage = new fullpage("#fullpage", {
       contactBtn.classList.remove("contact--contact");
       contactBtn.classList.remove("about--contact");
       contactBtn.classList.add("first--contact");
+      scrollCont.classList.remove("on--contact");
     }
     if (destination.index === 1) {
       // coming on about page from somewhere
@@ -30,6 +32,7 @@ var myFullpage = new fullpage("#fullpage", {
       contactBtn.classList.remove("contact--contact");
       contactBtn.classList.add("about--contact");
       scrolldown.classList.remove("active");
+      scrollCont.classList.remove("on--contact");
     }
     if (destination.index === 2) {
       // coming on projects page from somewhere
@@ -37,6 +40,7 @@ var myFullpage = new fullpage("#fullpage", {
       contactBtn.classList.remove("contact--contact");
       contactBtn.classList.add("projects--contact");
       scrolldown.classList.remove("active");
+      scrollCont.classList.remove("on--contact");
     }
     if (destination.index === 3) {
       // coming on contact page from somewhere
@@ -44,6 +48,7 @@ var myFullpage = new fullpage("#fullpage", {
       contactBtn.classList.remove("about--contact");
       contactBtn.classList.add("contact--contact");
       scrolldown.classList.remove("active");
+      scrollCont.classList.add("on--contact");
     }
   },
 });

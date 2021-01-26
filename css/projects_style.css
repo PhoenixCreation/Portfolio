@@ -66,8 +66,7 @@
   transition: all 0.4s linear;
 }
 .work--first:hover {
-  scale: 1.75;
-  transform: translateX(45px);
+  transform: translateX(45px) scale(1.75);
 }
 .work--first--img {
   width: 100%;
@@ -88,8 +87,7 @@
   transition: all 0.4s linear;
 }
 .work--second--top:hover {
-  scale: 2.5;
-  transform: translateY(40px);
+  transform: translateY(40px) scale(2.5);
 }
 .work--second--top--img {
   width: 100%;
@@ -104,8 +102,7 @@
   transition: all 0.4s linear;
 }
 .work--second--bottom:hover {
-  scale: 2;
-  transform: translateY(-60px);
+  transform: translateY(-60px) scale(2);
 }
 .work--second--bottom--img {
   width: 100%;
@@ -125,8 +122,7 @@
   transition: all 0.4s linear;
 }
 .work--third--top:hover {
-  scale: 2;
-  transform: translateX(-70px);
+  transform: translateX(-70px) scale(2);
 }
 .work--third--top--img {
   width: 100%;

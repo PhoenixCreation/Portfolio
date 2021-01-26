@@ -6,6 +6,7 @@
   padding-left: 20px;
   padding-right: 20px;
   justify-content: space-between;
+  transition: all 0.5s linear;
 }
 .about--heading {
   margin-top: 50px;
@@ -89,14 +90,15 @@
   }
 }
 .about--card--logo--conatiner {
-  width: 70px;
-  height: 70px;
+  width: 70px !important;
+  height: 70px !important;
   border: 2px solid #e5e5e5;
   border-radius: 1000px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: none;
 }
 .about--card--logo {
   display: flex;
@@ -116,13 +118,20 @@
 }
 .about--card--desc--container {
   width: 100%;
+  text-align: center;
 }
 .about--card--desc {
   font-size: 18px;
   color: #e5e5e5bb;
-  text-align: center;
 }
 /* UI /UX logo */
+.uilogo--cont--protector {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .uilogo--cont {
   width: 32px;
   height: 42px;
@@ -143,11 +152,11 @@
   align-self: left;
   margin-left: 0px;
 }
-.uilogo--cont:hover .uilogo--heading {
+.uilogo--cont--protector:hover .uilogo--heading {
   align-self: center;
   margin-left: 3px;
 }
-.uilogo--cont:hover .uilogo--heading::before {
+.uilogo--cont--protector:hover .uilogo--heading::before {
   content: "";
   width: 1px;
   height: 1px;
@@ -164,7 +173,7 @@
   border-radius: 3px;
   margin-bottom: 3px;
 }
-.uilogo--cont:hover .uilogo--center {
+.uilogo--cont--protector:hover .uilogo--center {
   height: 2px;
 }
 .uilogo--bottom {
@@ -187,7 +196,7 @@
   margin-bottom: 0;
   width: 6px;
 }
-.uilogo--cont:hover .uilogo--bottom--left--3 {
+.uilogo--cont--protector:hover .uilogo--bottom--left--3 {
   width: 10px;
 }
 .uilogo--bottom--right {
@@ -197,7 +206,7 @@
   border-radius: 1px;
   margin-left: 2px;
 }
-.uilogo--cont:hover .uilogo--bottom--right {
+.uilogo--cont--protector:hover .uilogo--bottom--right {
   height: 100%;
 }
 [class^="uilogo--"] {
@@ -278,3 +287,173 @@
   }
 }
 /* Back end logo ended */
+
+@media screen and (max-width: 600px) {
+  .about--heading {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    flex: 1;
+  }
+  .about--heading--text {
+    font-size: 2.2rem;
+  }
+  .about--cards--container {
+    flex-direction: column;
+    flex: 5;
+    justify-content: flex-start;
+  }
+  .about--card {
+    flex-direction: row;
+    width: 85%;
+    height: auto;
+    border: 2px solid #ed5565;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .about--card--logo--conatiner {
+    transform: scale(0.8);
+    margin-bottom: 0;
+  }
+  .about--card--heading--container {
+    flex-direction: row;
+    padding-left: 10px;
+  }
+  .about--card--heading {
+    border-bottom: 2px solid #ed5565bb;
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+  .about--card--desc--container {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+  .about--card--desc {
+    font-size: 0.9rem;
+  }
+  .backlogo--text {
+    font-size: 12px;
+  }
+  .active .backlogo--hover--text {
+    display: block;
+    animation: BACKENDTEXT 3s steps(7) infinite alternate 0.2s;
+  }
+  @keyframes BACKENDTEXT {
+    0% {
+      width: 0ch;
+    }
+    80% {
+      width: 8ch;
+    }
+    100% {
+      width: 8ch;
+    }
+  }
+  .active .frontlogo--container {
+    animation: rotate360 3s ease-in-out infinite alternate;
+  }
+  @keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    90% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .active .uilogo--heading {
+    animation: ui1 3s linear infinite alternate;
+  }
+  @keyframes ui1 {
+    0% {
+      align-self: left;
+      margin-left: 0;
+    }
+    80% {
+      align-self: center;
+      margin-left: 3px;
+    }
+    100% {
+      align-self: center;
+      margin-left: 3px;
+    }
+  }
+  .active .uilogo--heading::before {
+    content: "";
+    animation: ui2 3s linear infinite alternate;
+  }
+  @keyframes ui2 {
+    0% {
+      content: "";
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      border-radius: 50px;
+      border-color: #ed5565;
+      left: -9px;
+      top: -3px;
+    }
+    80% {
+      content: "";
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      border: 2px solid #ed5565;
+      border-radius: 50px;
+      left: -9px;
+      top: -3px;
+    }
+    100% {
+      content: "";
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      border: 2px solid #ed5565;
+      border-radius: 50px;
+      left: -9px;
+      top: -3px;
+    }
+  }
+  .active .uilogo--center {
+    animation: ui3 3s linear infinite alternate;
+  }
+  @keyframes ui3 {
+    0% {
+      height: 7px;
+    }
+    80% {
+      height: 2px;
+    }
+    100% {
+      height: 2px;
+    }
+  }
+  .active .uilogo--bottom--right {
+    animation: ui4 3s linear infinite alternate;
+  }
+  @keyframes ui4 {
+    0% {
+      height: 6px;
+    }
+    80% {
+      height: 100%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .about--card--desc {
+    font-size: 0.8rem;
+  }
+  .about--card--heading {
+    font-size: 0.92rem;
+  }
+}

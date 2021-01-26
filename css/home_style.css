@@ -28,11 +28,11 @@
 @keyframes HomeHeading {
   0% {
     opacity: 0;
-    scale: 0;
+    transform: scale(0);
   }
   100% {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
 .home--devider {
@@ -182,10 +182,10 @@
 }
 @keyframes ImageAnimation {
   0% {
-    scale: 0.6;
+    transform: scale(0.65);
   }
   100% {
-    scale: 1;
+    transform: scale(1);
   }
 }
 .home--logodesign--container {
@@ -666,6 +666,11 @@
   .home--right {
     transform: scale(0.9);
   }
+
+  .other--contact {
+    opacity: 0;
+    display: none;
+  }
 }
 @media screen and (max-width: 992px) {
   .home--left {
@@ -673,6 +678,15 @@
   }
   .home--right {
     transform: scale(0.8);
+  }
+  .contact--btn--container {
+    width: 120px;
+    height: 35px;
+    border: 2px solid #ed5565;
+  }
+  .first--contact {
+    position: relative;
+    opacity: 1;
   }
 }
 @media screen and (max-width: 600px) {
@@ -683,11 +697,13 @@
   }
   .home--left {
     order: 2;
+    flex: 1;
+    justify-content: center;
   }
   .home--right {
     transform: scale(0.5);
-    height: 35vh;
-    margin-bottom: 20px;
+    height: 40vh;
+    margin-bottom: 0;
   }
   .home--heading {
     width: 100%;
@@ -708,6 +724,6 @@
     font-size: 1rem;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 }
