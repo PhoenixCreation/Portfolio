@@ -160,14 +160,36 @@
     justify-content: flex-start;
   }
   .contact--lower--left {
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 1.1rem;
     flex: 0;
   }
   .contact--lower--right {
     flex: 0;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left: 100px;
+    padding-left: 20px;
     padding-right: 20px;
     margin-top: 30px;
+  }
+  .contact--heading--text {
+    font-size: 1.5rem;
+    opacity: 0;
+  }
+
+  .contact--twitter--text,
+  .contact--instagram--text,
+  .contact--email--text {
+    font-size: 1.15rem;
+    color: aliceblue;
+    border-bottom: 1px #ffeeeeaa solid;
+  }
+  .contact--twitter--logo,
+  .contact--instagram--logo,
+  .contact--email--logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
   }
 }

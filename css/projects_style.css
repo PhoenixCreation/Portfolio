@@ -58,6 +58,7 @@
 }
 .work--first {
   width: 180px;
+  min-width: 180px !important;
   height: 250px;
   border: 10px solid #ed5565aa;
   margin-right: 5px;
@@ -79,6 +80,7 @@
 }
 .work--second--top {
   width: 180px;
+  min-width: 180px !important;
   height: 140px;
   border: 10px solid #ed5565aa;
   margin-bottom: 5px;
@@ -95,6 +97,7 @@
 }
 .work--second--bottom {
   width: 180px;
+  min-width: 180px !important;
   height: 250px;
   border: 10px solid #ed5565aa;
   border-radius: 5px;
@@ -115,6 +118,7 @@
 }
 .work--third--top {
   width: 300px;
+  min-width: 300px !important;
   height: 220px;
   border: 10px solid #ed5565aa;
   border-radius: 5px;
@@ -160,5 +164,37 @@
   }
   100% {
     cursor: inherit;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .projects--container {
+    height: auto;
+    background-color: transparent;
+  }
+  .work--container {
+    left: 0;
+    top: 0;
+  }
+  .projects--heading--container {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .work--container {
+    transform: scale(0.8);
+  }
+}
+
+/* TODO: create a new container specially for small devices from here. */
+/* TODO: Also don't forget to hide it on large screens. */
+@media screen and (max-width: 700px) {
+  .work--container {
+    transform: scale(0.6);
+  }
+}
+@media screen and (max-width: 600px) {
+  .work--container {
+    transform: scale(0.5);
   }
 }
