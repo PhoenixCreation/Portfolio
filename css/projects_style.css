@@ -166,6 +166,9 @@
     cursor: inherit;
   }
 }
+.work--container--m {
+  display: none;
+}
 
 @media screen and (max-width: 992px) {
   .projects--container {
@@ -190,11 +193,60 @@
 /* TODO: Also don't forget to hide it on large screens. */
 @media screen and (max-width: 700px) {
   .work--container {
-    transform: scale(0.6);
+    display: none;
   }
-}
-@media screen and (max-width: 600px) {
-  .work--container {
-    transform: scale(0.5);
+  .work--container--m {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: -50px;
+    margin-top: 10px;
+    opacity: 0;
+  }
+  .active .work--container--m {
+    animation: workcont 2s ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .work--first--m {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+  }
+  .work--first--top--m {
+    width: 150px;
+    height: 200px;
+    border: 5px solid #ed5565aa;
+    border-radius: 5px;
+    background-color: #fff9;
+    margin-bottom: 5px;
+  }
+  .work--first--bottom--m {
+    width: 150px;
+    height: 115px;
+    border: 5px solid #ed5565aa;
+    border-radius: 5px;
+    background-color: #fff9;
+  }
+  .work--second--m {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .work--second--top--m {
+    width: 150px;
+    height: 120px;
+    border: 5px solid #ed5565aa;
+    border-radius: 5px;
+    background-color: #fff9;
+    margin-bottom: 5px;
+  }
+  .work--second--bottom--m {
+    width: 150px;
+    height: 210px;
+    border: 5px solid #ed5565aa;
+    border-radius: 5px;
+    background-color: #fff9;
   }
 }
