@@ -58,12 +58,12 @@ var myFullpage = new fullpage("#fullpage", {
 
 // I am not liking the meteor system... but if wanted just uncomment this
 
-// document.addEventListener("mousemove", (event) => {
-//   let x = event.clientX - 15;
-//   let y = event.clientY - 15;
-//   meteor.style.left = x + "px";
-//   meteor.style.top = y + "px";
-// });
+document.addEventListener("mousemove", (event) => {
+  let x = event.clientX - 15;
+  let y = event.clientY - 15;
+  meteor.style.left = x + "px";
+  meteor.style.top = y + "px";
+});
 
 // Mobile check if required later....
 // let mobile = false
