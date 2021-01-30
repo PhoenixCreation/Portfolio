@@ -13,6 +13,121 @@ body {
   scroll-behavior: smooth;
   cursor: url("Images/cursor.png"), auto;
 }
+.background--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.background--c1,
+.background--c2,
+.background--c3,
+.background--c4,
+.background--c5 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 2000px;
+  background-color: #ededde06;
+  transform: scale(2);
+  z-index: -11;
+}
+.background--c2 {
+  width: 175px;
+  height: 175px;
+}
+.background--c3 {
+  width: 275px;
+  height: 275px;
+}
+.background--c4 {
+  width: 400px;
+  height: 400px;
+}
+.background--c5 {
+  width: 550px;
+  height: 550px;
+}
+
+.background--c1,
+.background--c2,
+.background--c3,
+.background--c4,
+.background--c5 {
+  animation: backgroundSVG 1s linear;
+}
+.background--c2 {
+  animation-timing-function: ease-in !important;
+}
+.background--c3 {
+  animation-timing-function: ease-in-out !important;
+}
+.background--c4 {
+  animation-timing-function: ease-out !important;
+}
+.background--c5 {
+  animation-timing-function: ease !important;
+}
+@keyframes backgroundSVG {
+  0% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes backgroundSVG0 {
+  0% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes backgroundSVG1 {
+  0% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes backgroundSVG2 {
+  0% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes backgroundSVG3 {
+  0% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -237,6 +352,58 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .background--c1,
+  .background--c2,
+  .background--c3,
+  .background--c4,
+  .background--c5 {
+    transform: scale(1.4);
+  }
+
+  @keyframes backgroundSVG0 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  @keyframes backgroundSVG1 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  @keyframes backgroundSVG2 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  @keyframes backgroundSVG3 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.4);
+    }
+  }
   .navbar--options {
     width: 25px;
     height: 25px;
@@ -249,6 +416,68 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  .background--c1,
+  .background--c2,
+  .background--c3,
+  .background--c4,
+  .background--c5 {
+    transform: scale(1.2);
+  }
+  @keyframes backgroundSVG {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  @keyframes backgroundSVG0 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  @keyframes backgroundSVG1 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  @keyframes backgroundSVG2 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  @keyframes backgroundSVG3 {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.75);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
   .pager {
     top: 78vh;
   }

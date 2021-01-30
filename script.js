@@ -3,13 +3,16 @@ let contactBtn = document.getElementById("contact--btn");
 let meteor = document.getElementById("mouse--orbitor");
 let scrolldown = document.getElementById("scrolldown--cont");
 let scrollCont = document.getElementById("myMenu");
-
+let backCircs = document.querySelectorAll("[class^=background--c]");
 // // fullpage js
 var myFullpage = new fullpage("#fullpage", {
   anchors: ["home", "about", "projects", "contact"],
   menu: "#myMenu",
   verticalCentered: false,
   onLeave: function (origin, destination, direction) {
+    backCircs.forEach((circle) => {
+      circle.style.animation = `backgroundSVG${destination.index} 0.7s linear`;
+    });
     if (origin.index === 0) {
       // from 1st page to other page
       contactBtn.classList.add("other--contact");
