@@ -10,7 +10,7 @@ Open the root with live server and you are good to go.
 
 ## Live Demo
 
-- [Netlify](https://phoenixcreation.netlify.app)
+- [Netlify](https://phoenixcreation.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/c0b25cfa-4873-4a70-bb93-614938724919/deploy-status)](https://app.netlify.com/sites/phoenixcreation/deploys)
 - (Github)(Coming soon...)
 
 #
