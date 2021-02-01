@@ -84,12 +84,16 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
   let user_info = "";
   user_info += "`Browser CodeName: " + navigator.appCodeName + "` \n";
   user_info += "`Browser Name: " + navigator.appName + "` \n";
+  user_info += "`\n`";
   user_info += "`Browser Version: " + navigator.appVersion + "` \n";
   user_info += "`Cookies Enabled: " + navigator.cookieEnabled + "` \n";
   user_info += "`Browser Language: " + navigator.language + "` \n";
   user_info += "`Browser Online: " + navigator.onLine + "` \n";
+  user_info += "`\n`";
   user_info += "`Platform: " + navigator.platform + "` \n";
   user_info += "`User-agent header: " + navigator.userAgent + "` \n";
+  user_info += "`\n`";
+  user_info += "`Date formate: " + new Date().toString() + "` \n";
 
   fetch(
     "https://discord.com/api/webhooks/800229959875821630/sq6qQNbWZbg8-x4u-qVIQBT3ql9lqmCYqph0Eu_d7e341MJJtJ06NeeGsQlTKTYZsMw2",
