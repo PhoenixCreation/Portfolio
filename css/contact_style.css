@@ -84,6 +84,21 @@
   height: 30px;
   margin-right: 7px;
 }
+.contact--form {
+  all: initial;
+  font-size: 24px;
+  color: aliceblue;
+  cursor: pointer;
+  padding: 2px;
+  border: 3px solid #ed5565;
+  border-radius: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contact--form:hover {
+  background-color: #ed5565;
+  border-color: white;
+}
 .contact--lower {
   height: 200px;
   background: #e06d79;
@@ -131,6 +146,16 @@
 .logo--footer--img {
   width: 100%;
   height: 100%;
+}
+
+/* Form for contact */
+.contact--form--container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #f001;
+  z-index: 1500;
 }
 @media screen and (max-width: 992px) {
   .on--contact .pager--indicator {
@@ -191,5 +216,8 @@
     width: 24px;
     height: 24px;
     margin-right: 7px;
+  }
+  .contact--form {
+    font-size: 1.15rem;
   }
 }
