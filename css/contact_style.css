@@ -94,6 +94,12 @@
   border-radius: 5px;
   padding-right: 15px;
   padding-left: 15px;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.active .contact--form {
+  animation: contactLink 0.6s linear 1.3s;
+  animation-fill-mode: forwards;
 }
 .contact--form:hover {
   background-color: #ed5565;
@@ -154,9 +160,93 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: #f001;
+  background-color: #0007;
   z-index: 1500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.contact--form--inner--cont {
+  padding: 30px;
+  background-color: #15171d;
+  border: 4px solid #ed5565;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact--form--heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact--form--close--button {
+  all: initial;
+  color: aliceblue;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 30px;
+}
+.contact--form--heading--text {
+  flex: 1;
+  font-size: 35px;
+  color: #ededed;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contact--form--name,
+.contact--form--email,
+.contact--form--message {
+  width: 500px;
+  padding: 20px;
+  border: 2px solid #707070;
+  border-radius: 4px;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin: 10px;
+  transition: all 0.4s linear;
+}
+.contact--form--name:hover,
+.contact--form--email:hover,
+.contact--form--message:hover {
+  border-color: aliceblue;
+}
+
+.contact--form--name:focus,
+.contact--form--email:focus,
+.contact--form--message:focus {
+  border-color: #ed5565;
+}
+.contact--form--message {
+  resize: none;
+  font-family: inherit;
+  height: 125px;
+}
+.contact--form--submit {
+  all: initial;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-self: center;
+  border: 3px solid #ed5565;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.4s linear;
+}
+.contact--form--submit:hover {
+  border-color: white;
+  background-color: #ed5565;
+}
+
+/* Media quries */
 @media screen and (max-width: 992px) {
   .on--contact .pager--indicator {
     background-color: black;
@@ -219,5 +309,25 @@
   }
   .contact--form {
     font-size: 1.15rem;
+  }
+  .contact--form--inner--cont {
+    padding: 15px;
+  }
+  .contact--form--name,
+  .contact--form--email,
+  .contact--form--message {
+    width: 270px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact--form--inner--cont {
+    padding: 10px;
+  }
+  .contact--form--name,
+  .contact--form--email,
+  .contact--form--message {
+    width: 210px;
+    font-size: 1rem;
   }
 }

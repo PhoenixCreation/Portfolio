@@ -4,6 +4,8 @@ let meteor = document.getElementById("mouse--orbitor");
 let scrolldown = document.getElementById("scrolldown--cont");
 let scrollCont = document.getElementById("myMenu");
 let backCircs = document.querySelectorAll("[class^=background--c]");
+let contactForm = document.getElementById("contact--form--container");
+
 // // fullpage js
 var myFullpage = new fullpage("#fullpage", {
   anchors: ["home", "about", "projects", "contact"],
@@ -55,29 +57,6 @@ var myFullpage = new fullpage("#fullpage", {
     }
   },
 });
-
-// I am not liking the meteor system... but if wanted just uncomment this
-
-// document.addEventListener("mousemove", (event) => {
-//   let x = event.clientX - 15;
-//   let y = event.clientY - 15;
-//   meteor.style.left = x + "px";
-//   meteor.style.top = y + "px";
-// });
-
-// Mobile check if required later....
-// let mobile = false
-// if (
-//   navigator.userAgent.match(/Android/i) ||
-//   navigator.userAgent.match(/webOS/i) ||
-//   navigator.userAgent.match(/iPhone/i) ||
-//   navigator.userAgent.match(/iPad/i) ||
-//   navigator.userAgent.match(/iPod/i) ||
-//   navigator.userAgent.match(/BlackBerry/i) ||
-//   navigator.userAgent.match(/Windows Phone/i)
-// ) {
-//   mobile = true
-// }
 
 if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
 } else {
@@ -134,3 +113,45 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
     }
   );
 }
+
+contactForm.style.display = "none";
+
+contactForm.addEventListener("click", () => {
+  console.log("clicked on form");
+});
+
+const showForm = () => {
+  contactForm.style.display = "flex";
+};
+
+const closeForm = () => {
+  contactForm.style.display = "none";
+};
+window.onclick = (event) => {
+  if (event.target == contactForm) {
+    closeForm();
+  }
+};
+
+// I am not liking the meteor system... but if wanted just uncomment this
+
+// document.addEventListener("mousemove", (event) => {
+//   let x = event.clientX - 15;
+//   let y = event.clientY - 15;
+//   meteor.style.left = x + "px";
+//   meteor.style.top = y + "px";
+// });
+
+// Mobile check if required later....
+// let mobile = false
+// if (
+//   navigator.userAgent.match(/Android/i) ||
+//   navigator.userAgent.match(/webOS/i) ||
+//   navigator.userAgent.match(/iPhone/i) ||
+//   navigator.userAgent.match(/iPad/i) ||
+//   navigator.userAgent.match(/iPod/i) ||
+//   navigator.userAgent.match(/BlackBerry/i) ||
+//   navigator.userAgent.match(/Windows Phone/i)
+// ) {
+//   mobile = true
+// }

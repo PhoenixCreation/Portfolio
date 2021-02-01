@@ -483,7 +483,7 @@
                 phoenixcreationweb@gmail.com
               </div>
             </a>
-            <button class="contact--form" onclick="toggleContactForm()">
+            <button class="contact--form" onclick="showForm()">
               Still not found a way? Try this...
             </button>
           </div>
@@ -574,29 +574,37 @@
       <div class="background--c5"></div>
     </div>
     <div class="contact--form--container" id="contact--form--container">
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label
-            >Your Role:
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label
-          >
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      <div class="contact--form--inner--cont">
+        <div class="contact--form--heading">
+          <div class="contact--form--heading--text">Contact Me</div>
+          <button class="contact--form--close--button" onclick="closeForm()">
+            X
+          </button>
+        </div>
+        <form name="feedback" method="POST" data-netlify="true">
+          <input
+            type="text"
+            name="Name"
+            class="contact--form--name"
+            placeholder="Your Good Name"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            class="contact--form--email"
+            placeholder="Your Email to contact you further"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your sweet words..."
+            class="contact--form--message"
+            required
+          ></textarea>
+          <button type="submit" class="contact--form--submit">SUBMIT</button>
+        </form>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
