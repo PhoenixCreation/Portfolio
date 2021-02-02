@@ -133,6 +133,17 @@ window.onclick = (event) => {
   }
 };
 
+window.onmousemove = (event) => {
+  backCircs.forEach((circle, index) => {
+    let offset = (index + 1) * 30;
+    let { x, y } = event;
+    let newX = x - window.innerWidth / 2;
+    let newY = y - window.innerHeight / 2;
+    newX = (newX * offset * -1) / (window.innerWidth * 0.33);
+    newY = (newY * offset * -1) / (window.innerHeight * 0.33);
+    circle.style.transform = `translate(${newX}px, ${newY}px) scale(2)`;
+  });
+};
 // I am not liking the meteor system... but if wanted just uncomment this
 
 // document.addEventListener("mousemove", (event) => {

@@ -35,23 +35,30 @@ body {
   border-radius: 2000px;
   background-color: #ededde06;
   transform: scale(2);
-  z-index: -11;
+  z-index: -15;
+  transition: all 0.1s linear;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2),
+    -1px -3px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .background--c2 {
   width: 175px;
   height: 175px;
+  z-index: -20;
 }
 .background--c3 {
   width: 275px;
   height: 275px;
+  z-index: -25;
 }
 .background--c4 {
   width: 400px;
   height: 400px;
+  z-index: -30;
 }
 .background--c5 {
   width: 550px;
   height: 550px;
+  z-index: -35;
 }
 
 .background--c1,
