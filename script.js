@@ -5,6 +5,7 @@ let scrolldown = document.getElementById("scrolldown--cont");
 let scrollCont = document.getElementById("myMenu");
 let backCircs = document.querySelectorAll("[class^=background--c]");
 let contactForm = document.getElementById("contact--form--container");
+contactForm.style.display = "none";
 
 // // fullpage js
 var myFullpage = new fullpage("#fullpage", {
@@ -114,12 +115,6 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
   );
 }
 
-contactForm.style.display = "none";
-
-contactForm.addEventListener("click", () => {
-  console.log("clicked on form");
-});
-
 const showForm = () => {
   contactForm.style.display = "flex";
 };
@@ -127,6 +122,7 @@ const showForm = () => {
 const closeForm = () => {
   contactForm.style.display = "none";
 };
+
 window.onclick = (event) => {
   if (event.target == contactForm) {
     closeForm();
@@ -144,6 +140,7 @@ window.onmousemove = (event) => {
     circle.style.transform = `translate(${newX}px, ${newY}px) scale(2)`;
   });
 };
+
 // I am not liking the meteor system... but if wanted just uncomment this
 
 // document.addEventListener("mousemove", (event) => {
