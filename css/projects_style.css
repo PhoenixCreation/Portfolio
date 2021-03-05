@@ -189,8 +189,6 @@
   }
 }
 
-/* TODO: create a new container specially for small devices from here. */
-/* TODO: Also don't forget to hide it on large screens. */
 @media screen and (max-width: 700px) {
   .work--container {
     display: none;
