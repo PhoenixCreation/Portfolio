@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+a {
+  all: initial;
+  cursor: pointer;
+  color: aliceblue;
+}
+body {
+  background-color: #15171d;
+  color: aliceblue;
+  scroll-behavior: smooth;
+  cursor: url("../../Images/cursor.png"), auto;
+  font-family: "PT Sans", sans-serif;
+}
