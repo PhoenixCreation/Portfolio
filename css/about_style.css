@@ -146,11 +146,11 @@
 .uilogo--heading {
   position: relative;
   width: 8px;
-  height: 0px;
+  height: 0;
   border: 2px solid #ed5565;
   margin-bottom: 3px;
   align-self: left;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .uilogo--cont--protector:hover .uilogo--heading {
   align-self: center;
@@ -188,7 +188,7 @@
 .uilogo--bottom--left--2,
 .uilogo--bottom--left--3 {
   width: 10px;
-  height: 0px;
+  height: 0;
   border: 0.8px solid #ed5565;
   margin-bottom: 2px;
 }
@@ -391,8 +391,8 @@
   @keyframes ui2 {
     0% {
       content: "";
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
       position: absolute;
       border-radius: 50px;
       border-color: #ed5565;

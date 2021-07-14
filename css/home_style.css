@@ -52,7 +52,7 @@
     transform: translateX(150px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 .home--devider--lower {
@@ -68,7 +68,7 @@
     transform: translateX(-150px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 
@@ -82,7 +82,7 @@
     transform: translateX(-200px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 .home--works {
@@ -256,7 +256,7 @@
 }
 .logo--js--inner--line {
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 178px;
   border: 2px solid #ed5565;
   width: 25px;
@@ -305,7 +305,7 @@
 }
 .logo--react--inner--line {
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 220px;
   border: 2px solid #ed5565;
   width: 25px;
@@ -452,7 +452,7 @@
 }
 .logo--firebase--inner--line {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 220px;
   border: 2px solid #ed5565;
   width: 25px;
@@ -501,7 +501,7 @@
 }
 .logo--p5js--inner--line {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 178px;
   border: 2px solid #ed5565;
   width: 25px;

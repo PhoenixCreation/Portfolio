@@ -39,45 +39,30 @@ body {
   transition: all 0.1s linear;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2),
     -1px -3px 16px 0 rgba(0, 0, 0, 0.2);
+  animation: backgroundSVG 1s linear;
 }
 .background--c2 {
   width: 175px;
   height: 175px;
   z-index: -20;
+  animation-timing-function: ease-in !important;
 }
 .background--c3 {
   width: 275px;
   height: 275px;
   z-index: -25;
+  animation-timing-function: ease-in-out !important;
 }
 .background--c4 {
   width: 400px;
   height: 400px;
   z-index: -30;
+  animation-timing-function: ease-out !important;
 }
 .background--c5 {
   width: 550px;
   height: 550px;
   z-index: -35;
-}
-
-.background--c1,
-.background--c2,
-.background--c3,
-.background--c4,
-.background--c5 {
-  animation: backgroundSVG 1s linear;
-}
-.background--c2 {
-  animation-timing-function: ease-in !important;
-}
-.background--c3 {
-  animation-timing-function: ease-in-out !important;
-}
-.background--c4 {
-  animation-timing-function: ease-out !important;
-}
-.background--c5 {
   animation-timing-function: ease !important;
 }
 @keyframes backgroundSVG {

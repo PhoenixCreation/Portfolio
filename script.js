@@ -1,6 +1,5 @@
 // DOM elements
 let contactBtn = document.getElementById("contact--btn");
-let meteor = document.getElementById("mouse--orbitor");
 let scrolldown = document.getElementById("scrolldown--cont");
 let scrollCont = document.getElementById("myMenu");
 let backCircs = document.querySelectorAll("[class^=background--c]");
@@ -8,11 +7,11 @@ let contactForm = document.getElementById("contact--form--container");
 contactForm.style.display = "none";
 
 // // fullpage js
-var myFullpage = new fullpage("#fullpage", {
+new fullpage("#fullpage", {
   anchors: ["home", "about", "projects", "contact"],
   menu: "#myMenu",
   verticalCentered: false,
-  onLeave: function (origin, destination, direction) {
+  onLeave: function (origin, destination) {
     backCircs.forEach((circle) => {
       circle.style.animation = `backgroundSVG${destination.index} 0.7s linear`;
     });
@@ -59,8 +58,7 @@ var myFullpage = new fullpage("#fullpage", {
   },
 });
 
-if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-} else {
+if (location.hostname != "localhost" && location.hostname != "127.0.0.1") {
   let user_info = "";
   user_info += "`Browser CodeName: " + navigator.appCodeName + "` \n";
   user_info += "`Browser Name: " + navigator.appName + "` \n";
@@ -142,6 +140,7 @@ window.onmousemove = (event) => {
 };
 
 // I am not liking the meteor system... but if wanted just uncomment this
+// let meteor = document.getElementById("mouse--orbitor");
 
 // document.addEventListener("mousemove", (event) => {
 //   let x = event.clientX - 15;
